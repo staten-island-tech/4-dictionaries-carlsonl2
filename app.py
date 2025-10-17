@@ -16,4 +16,6 @@ Store = [{
     "Store" : "Apple"
 }]
 
-print(Store[1]["Store"])
+for index, item in enumerate(Store):
+    '''for i in range(index):'''
+    print(index, ":", Store{["Name"]})
