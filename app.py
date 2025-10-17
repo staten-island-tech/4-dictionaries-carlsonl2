@@ -16,4 +16,4 @@ Store = [{
     "Store" : "Apple"
 }]
 
-print(Store[1]["Price"])
+print(Store[1]["Store"])
