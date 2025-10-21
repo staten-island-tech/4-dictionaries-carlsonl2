@@ -28,7 +28,7 @@ done = False
 
 while done == False:
     choose = input("What would you like to buy?")
-    for item in Store:
+    #for item in Store:
         if choose == Store[item]['Name']:
             cart.append(Store[item]['Name'])
             subtotal = subtotal + Store[item]['Price']
