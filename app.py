@@ -30,6 +30,6 @@ while done == False:
     choose = input("What would you like to buy?")
     for item in Store:
         if choose == item['Name']:
-            cart.append(f"{item['Name']}")
+            cart.append(item['Name'])
         print(f"{cart}")
 
