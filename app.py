@@ -1,5 +1,5 @@
 Store = [{
-"name" : "Airpods",
+"Name" : "Airpods",
 "Price" : 199.99,
 "Store" : "Apple"
 },
@@ -16,6 +16,20 @@ Store = [{
     "Store" : "Apple"
 }]
 
+
+print("Welcome to the Store!")
 for index, item in enumerate(Store):
-    '''for i in range(index):'''
-    print(index, ":", Store{["Name"]})
+   print(f"{index} : {item['Name']}, ${item['Price']}, {item['Store']}")
+
+    #the f string allows the code to output multiple values in a dictionary of a list of dictionaries
+cart = []
+subtotal = 0
+done = False
+
+while done == False:
+    choose = input("What would you like to buy?")
+    for item in Store:
+        if choose == item['Name']:
+            cart.append(f"{item['Name']}")
+        print(f"{cart}")
+
