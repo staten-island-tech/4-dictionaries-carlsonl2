@@ -35,17 +35,18 @@ while done == False:
     print(f"{cart}")
     print(subtotal)'''
 
-def late(x,y):
+def late(y):
     students = y
     waiting = 0 
     next = y + students
+    set = ["take", "take", "serve", "take", "serve", "serve", "close"]
     while next < 999:
-        for i in (6): 
-            if x[i] == "take":
+        for i in set: 
+            if set[i] == "take":
                 students == students + 1 and waiting == waiting + 1
-            elif x[i] == "serve":
+            elif set[i] == "serve":
                 waiting == waiting - 1
-            elif x[i] == "close":
+            elif set[i] == "close":
                 print(f"{students, waiting, next}")
-late(["take", "take", "serve", "take", "serve", "serve"], 23)
+late(23)
 
