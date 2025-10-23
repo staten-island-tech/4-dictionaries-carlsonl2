@@ -40,7 +40,7 @@ def late(x,y):
     waiting = 0 
     next = y + students
     while next < 999:
-        for i in x: 
+        for i in (6): 
             if x[i] == "take":
                 students == students + 1 and waiting == waiting + 1
             elif x[i] == "serve":
