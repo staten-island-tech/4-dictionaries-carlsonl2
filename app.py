@@ -1,4 +1,4 @@
-Store = [{
+'''Store = [{
 "Name" : "Airpods",
 "Price" : 199.99,
 "Store" : "Apple"
@@ -33,5 +33,19 @@ while done == False:
             cart.append([item]['Name'])
             subtotal = subtotal + Store[item]['Price']
     print(f"{cart}")
-    print(subtotal)
+    print(subtotal)'''
+
+def late(x,y):
+    students = y
+    waiting = 0 
+    next = y + students
+    while next < 999:
+        for i in x: 
+            if x[i] == "take":
+                students == students + 1 and waiting == waiting + 1
+            elif x[i] == "serve":
+                waiting == waiting - 1
+            elif x[i] == "close":
+                print(f"{students, waiting, next}")
+late(["take", "take", "serve", "take", "serve", "serve"], 23)
 
