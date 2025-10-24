@@ -35,7 +35,7 @@ while done == False:
     print(f"{cart}")
     print(subtotal)'''
 
-def late(y):
+'''def late(y):
     waiting = 0 
     late = 0
     students = y + late
@@ -48,8 +48,24 @@ def late(y):
                 waiting == waiting - 1
             elif set[i] == "close":
                 print(f"{late, waiting, students}")
-late(23)
+late(23)'''
 
 '''set = ["take", "take", "serve", "take", "serve", "serve", "close"]
 for i in range(6):
     print(set[i])'''
+
+def late_students(x,y):
+    yesterday = x
+    waiting = 0
+    late = 0
+    nextnumber = yesterday + late
+    while nextnumber < 999:
+        for i in range(7):
+            if y[i] == "take":
+                waiting += waiting  
+                late += late  
+            elif y[1] == "serve":
+                waiting = waiting - 1
+            elif y[i] == "close":
+                print(f"{late, waiting, nextnumber}")
+late_students(23, ["take", "take", "serve", "take", "serve", "serve", "close"])
