@@ -41,7 +41,6 @@ def late(y):
     next = y + 1
     set = ["take", "take", "serve", "take", "serve", "serve", "close"]
     while next < 999:
-        set = ["take", "take", "serve", "take", "serve", "serve", "close"]
         for i in range(7): 
             if set[i] == "take":
                 students == students + 1 and waiting == waiting + 1
