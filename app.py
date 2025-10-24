@@ -36,18 +36,18 @@ while done == False:
     print(subtotal)'''
 
 def late(y):
-    students = y
     waiting = 0 
-    next = y + 1
+    late = 0
+    students = y + late
     set = ["take", "take", "serve", "take", "serve", "serve", "close"]
-    while next < 999:
+    while students < 999:
         for i in range(7): 
             if set[i] == "take":
-                students == students + 1 and waiting == waiting + 1
+                waiting == waiting + 1 and late == late + 1
             elif set[i] == "serve":
                 waiting == waiting - 1
             elif set[i] == "close":
-                print(f"{students, waiting, next}")
+                print(f"{late, waiting, students}")
 late(23)
 
 '''set = ["take", "take", "serve", "take", "serve", "serve", "close"]
