@@ -38,10 +38,11 @@ while done == False:
 def late(y):
     students = y
     waiting = 0 
-    next = y + students
+    next = y + 1
     set = ["take", "take", "serve", "take", "serve", "serve", "close"]
     while next < 999:
-        for i in set: 
+        set = ["take", "take", "serve", "take", "serve", "serve", "close"]
+        for i in range(7): 
             if set[i] == "take":
                 students == students + 1 and waiting == waiting + 1
             elif set[i] == "serve":
@@ -50,3 +51,6 @@ def late(y):
                 print(f"{students, waiting, next}")
 late(23)
 
+'''set = ["take", "take", "serve", "take", "serve", "serve", "close"]
+for i in range(6):
+    print(set[i])'''
