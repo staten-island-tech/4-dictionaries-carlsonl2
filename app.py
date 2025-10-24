@@ -62,10 +62,10 @@ def late_students(x,y):
     while nextnumber < 999:
         for i in range(7):
             if y[i] == "take":
-                waiting += waiting  
-                late += late  
+                waiting = waiting + 1 
+                late = late + 1
             elif y[1] == "serve":
-                waiting = waiting - 1
+                waiting = waiting + 1
             elif y[i] == "close":
                 print(f"{late, waiting, nextnumber}")
 late_students(23, ["take", "take", "serve", "take", "serve", "serve", "close"])
