@@ -65,7 +65,7 @@ def late_students(x,y):
                 waiting = waiting + 1 
                 late = late + 1
             elif y[1] == "serve":
-                waiting = waiting + 1
+                waiting = waiting - 1
             elif y[i] == "close":
                 print(f"{late, waiting, nextnumber}")
         break
