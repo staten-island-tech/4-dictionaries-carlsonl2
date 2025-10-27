@@ -54,11 +54,11 @@ late(23)'''
 for i in range(6):
     print(set[i])'''
 
-def late_students(x,y):
+'''def late_students(x,y):
     waiting = 0
     late = 0
     while x < 999:
-        for i in range(7):
+        for i in range(y):
             if y[i] == "take":
                 waiting = waiting + 1 
                 late = late + 1
@@ -66,7 +66,22 @@ def late_students(x,y):
                 waiting = waiting - 1
             elif y[i] == "close":
                 nextnumber = x + late
-                break
         print(f"{late, waiting, nextnumber}")
+        break
+late_students(23, ["take", "take", "serve", "take", "serve", "serve", "close"])'''
+
+
+def late(x, y):
+    late = 0
+    waiting = 0
+    for i in range(7):
+        if y[i] == "take":
+            waiting = waiting + 1
+            late = late + 1
+        elif y[i] == "serve":
+            waiting = waiting - 1
+        elif y[i] == "close":
+            nextnumber = x + late
+            print(late, waiting, nextnumber)
+late(23, ["take", "take", "serve", "take", "serve", "serve", "close"])
         
-late_students(23, ["take", "take", "serve", "take", "serve", "serve", "close"])
