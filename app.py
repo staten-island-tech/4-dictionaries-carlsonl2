@@ -55,18 +55,18 @@ for i in range(6):
     print(set[i])'''
 
 def late_students(x,y):
-    yesterday = x
     waiting = 0
     late = 0
-    for i in range(7):
-        if y[i] == "take":
-            waiting = waiting + 1 
-            late = late + 1
-        elif y[1] == "serve":
-            waiting = waiting - 1
-            print(waiting)
-        elif y[i] == "close":
-            nextnumber = yesterday + late
-            print(f"{late, waiting, nextnumber}")
-        break
+    while x < 999:
+        for i in range(7):
+            if y[i] == "take":
+                waiting = waiting + 1 
+                late = late + 1
+            elif y[1] == "serve":
+                waiting = waiting - 1
+            elif y[i] == "close":
+                nextnumber = x + late
+                break
+        print(f"{late, waiting, nextnumber}")
+        
 late_students(23, ["take", "take", "serve", "take", "serve", "serve", "close"])
