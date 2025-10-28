@@ -26,20 +26,19 @@ for index, item in enumerate(Store):
     #the f string allows the code to output multiple values in a dictionary of a list of dictionaries
 cart = []
 subtotal = 0
+done = False 
 
-for item in range(index):
-    print(f"{Store[index]['Name']}")
-'''choose = input("What would you like to buy")
-if choose == f"{Store[1]['Name']}":
-   print(choose)'''
 
-'''while done == False:
+
+
+
+
+
+while done == False:
     choose = int(input("Would you like to buy anything? If so, put the number of the item you would like to purchase."))
-    for item in range(choose):
-        if choose == f"{Store[index]}":
-            cart.append(Store[item])
-            subtotal = subtotal + Store[item]['Price']
-    print(cart)'''
+    if choose == (index[item]):
+        print(index)
+           
     
 
 
