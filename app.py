@@ -35,9 +35,14 @@ done = False
 
 
 while done == False:
-    choose = int(input("Would you like to buy anything? If so, put the number of the item you would like to purchase."))
-    if choose == (index[item]):
-        print(index)
+    choose = input("Would you like to buy anything? If so, put the number of the item you would like to purchase.")
+    for i in range(index):
+        if choose == Store[i]['Name']:
+            cart.append(choose)
+    print(cart)
+        
+
+
            
     
 
