@@ -33,11 +33,10 @@ for i in range(x):
 done = False 
 subtotal = 0
 tax = 1.08875
-total = subtotal * tax
+
 cart = []
 
 while done == False:
-    total = subtotal * tax
     choose = input("Would you like to buy anything? If so, put the number of the item you would like to purchase.")
     x = index + 1
     for item in range(x):
@@ -50,10 +49,11 @@ while done == False:
     KeepShopping = input("Would you like to keep shopping? (Yes/No)")
             
     if KeepShopping == "No":
+        total = subtotal * tax
         done = True
         print(f"Here are all of the titems that you have bought. {cart}")
-        print(total)
-                
+        print(f"${round(total, 2)}")
+              
                 
         
         
