@@ -32,12 +32,12 @@ for i in range(x):
    print(f"{Store[i]['Name']}")'''
 done = False 
 subtotal = 0
-'''tax = 1.08875
-total = subtotal * tax'''
+tax = 1.08875
+total = subtotal * tax
 cart = []
 
 while done == False:
-   
+    total = subtotal * tax
     choose = input("Would you like to buy anything? If so, put the number of the item you would like to purchase.")
     x = index + 1
     for item in range(x):
@@ -45,14 +45,14 @@ while done == False:
             cart.append(choose)
             subtotal = subtotal + Store[item]['Price']
             print(f"here are the items you purchased {cart}")
-            print(subtotal)
+            
                   
-    '''KeepShopping = input("Would you like to keep shopping? (Yes/No)")
+    KeepShopping = input("Would you like to keep shopping? (Yes/No)")
             
     if KeepShopping == "No":
         done = True
         print(f"Here are all of the titems that you have bought. {cart}")
-        print(total)'''
+        print(total)
                 
                 
         
