@@ -37,7 +37,7 @@ tax = 1.08875
 cart = []
 
 while done == False:
-    choose = input("Would you like to buy anything? If so, put the number of the item you would like to purchase.")
+    choose = input("Would you like to buy anything?")
     x = index + 1
     for item in range(x):
         if choose == Store[item]['Name']:
@@ -53,7 +53,7 @@ while done == False:
         done = True
         print(f"Here are all of the titems that you have bought. {cart}")
         print(f"${round(total, 2)}")
-              
+        print("pay up dude")
                 
         
         
