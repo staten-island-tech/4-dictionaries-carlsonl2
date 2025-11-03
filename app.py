@@ -19,27 +19,31 @@ Store = [
 },
         ]
 
-
-print("Welcome to the Store!")
 for index, item in enumerate(Store):
-   print(f"{index} : {item['Name']}, ${item['Price']}, {item['Store']}")
+        print(f"{index} : {item['Name']}, ${item['Price']}, {item['Store']}")
+
+        for i in range(index):
+            print(index)
+
+
+'''print("Welcome to the Store!")'''
 
 
 
     #the f string allows the code to output multiple values in a dictionary of a list of dictionaries
-'''x = index + 1
-for i in range(x):
-   print(f"{Store[i]['Name']}")'''
-done = False 
+
+'''done = False 
 subtotal = 0
 tax = 1.08875
 
 cart = []
 
 while done == False:
+    for index, item in enumerate(Store):
+        print(f"{index} : {item['Name']}, ${item['Price']}, {item['Store']}")
     choose = input("Would you like to buy anything?")
-    x = index + 1
-    for item in range(x):
+    
+    for item in range(index):
         if choose == Store[item]['Name']:
             cart.append(choose)
             subtotal = subtotal + Store[item]['Price']
@@ -53,7 +57,7 @@ while done == False:
         done = True
         print(f"Here are all of the titems that you have bought. {cart}")
         print(f"${round(total, 2)}")
-        print("pay up dude")
+        print("pay up dude")'''
                 
         
         
